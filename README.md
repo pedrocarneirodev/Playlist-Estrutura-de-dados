@@ -19,7 +19,7 @@ Para compilar o código, abra o terminal do compilador e siga as seguintes instr
 Clone este repositório, em seguida entre dentro da pasta copiada
 
 ```bash
-git clone https://github.com/pedrocarneirodev/Playlist-Estrutura-de-dados.git
+git clone https://github.com/pedrocarneirodev/Simulador-de-Playlist.git
 ```
 
 Compile:
