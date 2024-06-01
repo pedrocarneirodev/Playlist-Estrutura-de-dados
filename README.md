@@ -34,3 +34,14 @@ E depois, execute:
 ## Correção dos Acentos:
 
 No Powershell, execute o seguinte codigo para resolver problema dos acentos:
+
+```
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding =
+New-Object System.Text.UTF8Encoding
+```
+
+Se for pelo Prompt de comando(CMD), execute o seguinte codigo para resolver problema dos acentos:
+
+```
+chcp 65001
+```
