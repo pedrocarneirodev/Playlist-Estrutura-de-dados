@@ -12,6 +12,21 @@
 6. Avançar para próxima música;
 7. Retornar a música anterior;
 
+## Correção dos Acentos:
+
+No Powershell, execute o seguinte comando antes de compilar o código, para resolver problema dos acentos:
+
+```
+$OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding =
+New-Object System.Text.UTF8Encoding
+```
+
+Se for pelo Prompt de comando(CMD), execute o seguinte codigo para resolver problema dos acentos:
+
+```
+chcp 65001
+```
+
 ## Como usar
 
 Para compilar o código, abra o terminal do compilador e siga as seguintes instruções:
@@ -24,13 +39,11 @@ git clone https://github.com/pedrocarneirodev/Simulador-de-Playlist.git
 
 Compile:
 ```
-gcc main.c -o output.exe
+cd .\Simulador-de-Playlist\
+gcc src\main.c -o output.exe
 ```
 
 E depois, execute:
 ```
 ./output.exe
 ```
-## Correção dos Acentos:
-
-No Powershell, execute o seguinte codigo para resolver problema dos acentos:

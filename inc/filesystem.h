@@ -8,7 +8,7 @@
 #include "types.h"
 
 void readFile(){
-    FILE* file = fopen("../musicas.txt", "r");
+    FILE* file = fopen("../file/musicas.txt", "r");
     if(file == NULL){
         printAlert("arquivo");
     }
@@ -34,7 +34,7 @@ void readFile(){
     fclose(file);
 }
 void writeFile(){
-    FILE* file = fopen("../musicas.txt", "w");
+    FILE* file = fopen("../file/musicas.txt", "w");
     if(file == NULL){
         printAlert("arquivo");
         exit(1);
