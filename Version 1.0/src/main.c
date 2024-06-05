@@ -3,7 +3,6 @@
 #include <windows.h>
 #include <locale.h>
 
-//#include "../inc/utils.h"
 #include "../inc/sort.h"
 #include "../inc/types.h"
 #include "../inc/print.h"
